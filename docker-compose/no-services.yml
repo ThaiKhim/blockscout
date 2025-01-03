@@ -1,4 +1,4 @@
-version: '3.9'
+version: "3.9"
 
 services:
   redis-db:
@@ -41,10 +41,10 @@ services:
     links:
       - db:database
     environment:
-        ETHEREUM_JSONRPC_HTTP_URL: http://host.docker.internal:8545/
-        ETHEREUM_JSONRPC_TRACE_URL: http://host.docker.internal:8545/
-        ETHEREUM_JSONRPC_WS_URL: ws://host.docker.internal:8545/
-        CHAIN_ID: '1337'
+        ETHEREUM_JSONRPC_HTTP_URL: http://34.81.113.222:8549/
+        ETHEREUM_JSONRPC_TRACE_URL: http://34.81.113.222:8549/
+        ETHEREUM_JSONRPC_WS_URL: ws://34.81.113.222:8646/
+        CHAIN_ID: "6660002"
 
   frontend:
     depends_on:
